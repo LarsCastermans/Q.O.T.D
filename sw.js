@@ -1,4 +1,4 @@
-const CACHE_NAME = "chatboyt-cache-v1";
+const CACHE_NAME = "Q.O.T.D.-cache-v1";
 const urlsToCache = [
   "index.html",
   "script.js",
