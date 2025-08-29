@@ -54,7 +54,8 @@ function toonVerslag() {
     <p><strong>Positieve gebeurtenis:</strong> ${antwoorden.geluk.join(", ")}</p>
     <p><strong>Frustrerende gebeurtenis:</strong> ${antwoorden.frustratie}</p>
     <p><strong>Maar:</strong> ${antwoorden.inzicht[0]}</p>
-    <p><strong>Maar:</strong> ${antwoorden.inzicht[1]}</p>`;
+    <p><strong>Maar:</strong> ${antwoorden.inzicht[1]}</p>`
+    <button onclick="saveReportScreenshotToGallery()">Save Screenshot</button>;
 }
 
 window.onload = toonVraag;
