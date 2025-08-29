@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatboyt</title>
+
+  <!-- Link naar manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Thema-kleur voor adresbalk -->
+  <meta name="theme-color" content="#317EFB">
+</head>
+<body>
+  <div id="chatbox"></div>
+  <script src="script.js"></script>
+
+  <script>
+    // Service worker registreren
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log("Service Worker geregistreerd"))
+        .catch(err => console.error("SW fout:", err));
+    }
+  </script>
+</body>
+</html>
