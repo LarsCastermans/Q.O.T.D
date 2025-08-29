@@ -10,16 +10,16 @@ function toonVraag() {
   chatbox.innerHTML = "";
 
   if (stap === 0) {
-    chatbox.innerHTML += `<p><strong>Chatboyt:</strong> Wat bracht je geluk vandaag?</p>`;
+    chatbox.innerHTML += `<p><strong>Q.O.T.D.:</strong> Wat bracht je geluk vandaag?</p>`;
     for (let i = 0; i < 3; i++) {
       chatbox.innerHTML += `<input type='text' id='geluk${i}' placeholder='Geluksmoment ${i+1}' /><br>`;
     }
     chatbox.innerHTML += `<button onclick='verwerkGeluk()'>Verstuur</button>`;
 
   } else if (stap === 1) {
-    chatbox.innerHTML += `<p><strong>Chatboyt:</strong> Wat frustreerde je vandaag?</p>`;
+    chatbox.innerHTML += `<p><strong>Q.O.T.D.:</strong> Wat frustreerde je vandaag?</p>`;
     chatbox.innerHTML += `<input type='text' id='frustratie' placeholder='Frustratie' /><br>`;
-    chatbox.innerHTML += `<p><strong>Chatboyt:</strong> Dat is jammer, maar zijn er ook positieve dingen uitgekomen of heb je er iets van geleerd?</p>`;
+    chatbox.innerHTML += `<p><strong>Q.O.T.D.:</strong> Dat is jammer, maar zijn er ook positieve dingen uitgekomen of heb je er iets van geleerd?</p>`;
     for (let i = 0; i < 2; i++) {
       chatbox.innerHTML += `<input type='text' id='inzicht${i}' placeholder='Inzicht ${i+1}' /><br>`;
     }
